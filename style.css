@@ -1,0 +1,325 @@
+
+:root{
+    --bg: #E1F6FF;
+    --accent: #FFBBE5;
+    --text: #000000c9;
+    --text-hover: #0000003b; 
+    --textweight: 600;
+    --textSize: 17px;
+    
+}
+    * {
+        padding: 0;
+        margin:0 ;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg);
+    }
+
+      /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        background: #ffffff;
+        border-radius: 25px;
+    }
+
+    #logo{
+        padding: 5px;
+        margin: 5px;
+        font-size:x-large;
+        font-weight: bold;
+        color: var(--accent);
+    }
+
+    #menu {
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        font-size: large;
+        font-weight: bold;
+        text-align: right;
+       list-style: none;
+        color: var(--text);
+        gap: 2rem;
+        
+    }
+
+    li a {
+        text-decoration: none;
+        color: var(--text);
+        
+    }
+
+    li :hover {
+        color: var(--accent);
+        text-decoration: underline;
+        transition: all 0.3s ease;
+    }
+
+    /* Hamburger menu (for smaller screens)*/
+.hamburger {
+    display: none;
+    background: transparent;
+    border: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .hamburger:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  
+  /* Three lines */
+  .hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: var(--text);
+    margin: 5px 0;
+    transition: transform .25s ease, opacity .25s ease;
+    border-radius: 2px;
+  }
+  
+  /* Animate to "X" when open */
+  #menu.open + .not-used { /* placeholder to avoid confusion */ }
+  .hamburger.is-open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.is-open span:nth-child(2) { opacity: 0; }
+  .hamburger.is-open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  
+  /* ----- Mobile styles ----- */
+  @media (max-width: 768px) {
+    .hamburger { display: inline-block; }
+  
+    /* Turn the menu into a dropdown panel */
+    #menu {
+      position: absolute;
+      top: calc(100% + 8px);      /* below the header */
+      right: 1.5rem;
+      left: 1.5rem;
+      display: none;   
+      flex-direction: column;
+      gap: 1rem;
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      z-index: 1000;
+      width: fit-content;
+    }
+  
+    /* Show when open */
+    #menu.open { display: flex; }
+  
+    /* Make header relatively positioned so the panel anchors to it */
+    header { position: relative; }
+  }
+
+      /* Intro */
+
+      .profile {
+        display: flex;
+        align-items: center; 
+        justify-content: center;  
+        gap: 10%;           
+        padding: 2rem;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 25px;
+      }
+      
+      .profilbilde img {
+        border-radius: 25px;
+        width: 200px;          
+        height: auto;
+        object-fit: cover;
+      }
+      
+      .profile-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        gap: 10px;
+      }
+
+      .profile-text h1{
+        color: var(--accent);
+      }
+
+      .profile-text h2 {
+        font-size: larger;
+        color: var(--text);
+      }
+
+    .button {
+        border-radius: 10px;
+        background-color: white;
+        border: 3px solid var(--accent); /* solid border with one color */
+        padding: 0.5rem 1rem;            /* space inside button */
+        color: var(--text);
+        font-size: var(--textSize);
+        font-weight: var(--textweight);
+        cursor: pointer;
+        transition: all 0.3s ease;  
+        text-decoration: none;
+    }
+
+
+    .button:hover{
+        border-radius: 10px;
+        background-color: var(--accent);
+        border: 3px solid var(--accent); 
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;   /* center under header */
+        gap: 1.5rem;               /* space between icons */
+        margin-top: 0.5rem;
+      }
+      
+      .social-icons a {
+        font-size: 1.5rem;         /* icon size */
+        color: var(--text);      /* your pink */
+        transition: color 0.3s ease;
+      }
+      
+      .social-icons a:hover {
+        color: var(--accent);        /* hover effect */
+      }
+
+    /* Card */
+
+    .card {
+        width: min(100% - 2rem, 800px);
+        margin: 20px auto;
+        padding: clamp(1rem, 3vw, 3rem);
+        background-color: white;
+        border-radius: 25px;
+        overflow-wrap: anywhere;
+      }
+      
+
+    /* About section */
+    #about {
+        font-size: large;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: var(--textSize);
+        color: var(--text);
+        font-weight: var(--textweight);
+        
+    }
+    
+    /* Skills section */
+    #skills {
+        font-size: large;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .two-col {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        justify-content: center;         /* center the grid block */
+        gap: 1rem 6rem;
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;                  /* center within the card */
+        text-align: left;
+        max-width: 600px; 
+        font-weight: var(--textweight);
+        color: var(--text);
+        font-size: var(--textSize);
+      }
+
+      .two-col li::before {
+        font-family: "Font Awesome 6 Free";  /* required */
+        font-weight: 900;                    /* solid icons */
+        content: "\f058";                    /* Unicode for fa-circle-check */
+        color: #ffbbe5;                      /* your pink accent */
+        margin-right: 8px;
+      }
+      
+      /* auto-collapse to one column on smaller screens */
+      @media (max-width: 640px) {
+        .two-col {
+          grid-template-columns: 1fr;
+          justify-content: center;
+          max-width: 100%;
+        }
+      }
+
+      /* Project section */
+    #projects, .project-title{
+        font-size: large;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+/* --- Projects grid: 2 cols + gap, collapse to 1 on small screens --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* exactly 2 columns */
+    column-gap: 2rem;
+    row-gap: 20px;   
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    align-items: start;
+  }
+  
+  /* Collapse to one column */
+  @media (max-width: 800px) {
+    .project-grid { grid-template-columns: 1fr; }
+  }
+  
+  /* Reset cards ONLY inside the grid */
+  .project-grid > .card {
+    width: auto;          
+    margin: 0;            
+    padding: 1.5rem;      
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background: #fff;
+    box-sizing: border-box; /* ensures padding doesn't overflow the grid cell */
+  }
+  
+  /* Keep paragraph left, but allow centered button */
+  .project-grid > .card p { text-align: left; }
+  
+  .project-grid > .card .button {
+    margin-top: 20px;     
+    align-self: center;  
+  }
+  
+  /* Optional: add a tiny internal gap so content doesn't touch edges on tiny screens */
+  .project-grid { padding-inline: 1rem; }
+  
+
+  .project-grid img {
+        border-radius: 25px;
+        width: 100%;          
+        height: auto;
+        object-fit: cover;
+        margin-top: 10px;
+        margin-bottom: 20px;
+  }
+  
+    
+
+
+
