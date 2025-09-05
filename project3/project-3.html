@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Omholt Myhre - Prosjekter</title>
+    <link rel="stylesheet" href="project3-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="project3-script.js" defer></script>
+</head>
+<body>
+    <header>
+      <a href="" id="logo">Emily Omholt Myhre</a>
+       
+        <button id="menu-toggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+        </button>
+
+        <ul id="menu">
+            <li><a href="#goal">Goal</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#outcome">Outcome</a></li>
+        </ul>
+    </header>
+
+    <section class="card" id="goal"> 
+        <h3 class="card-title">About this project</h3>
+        <p>This project was a group based project with a focus on agile software development. We set out to design an 
+            app that estimates solar energy production for homes and cabins in Norway. The goal was to combine weather data, 
+            location, and roof details into actionable insights for users considering solar panels. The app also includes a 
+            function that lets you choose different housewares and how much power they will use for off-grid cabins. The app 
+            shows the user’s house on a map along with weather conditions that can affect the panels power. During the project 
+            we had interviews and user-testing with users who were interested in installing solar panels. 
+        </p>
+</section>
+
+    <section class="card" id="process"> 
+        <h3 class="card-title">Early process</h3>
+        <p> We began the design process by defining functional and non-functional requirements, then narrowed them down to 
+            an MVP focused on core features: address lookup, weather data integration, solar output calculation, and power production 
+            estimates. We used Crazy 8s to generate ideas, created wireframes in Figma, and validated early concepts through user interviews.
+
+            The MVP was developed with Scrumban, using weekly sprints, reviews, and retrospectives. 
+            Initial challenges included incomplete API data, which we solved by working with available static datasets. The demo confirmed 
+            that the calculations worked but revealed the need for a clearer product direction. Based on feedback, we refined requirements 
+            and built a user story:
+            “The user should get an estimate of potential solar energy production for their home or cabin based on location-specific 
+            weather data.”</p>
+    <div class="slider" role="region" aria-label="Image slideshow">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Slides">
+      <img src="./assets/first-sketch1.png" alt="First sketch" class="slide is-active"
+           data-caption="First sketch of log in screen">
+      <img src="./assets/first-sketch2.png" alt="First sketch alternative" class="slide"
+           data-caption="First sketch of home screen">
+      <img src="./assets/first-sketch3.png" alt="First sketch details" class="slide"
+           data-caption="First sketch of calculation screen">
+      <img src="./assets/first-wireframe1.png" alt="First wireframe" class="slide"
+           data-caption="First wireframe iteration">
+      <img src="./assets/MVP.jpg" alt="MVP design" class="slide"
+           data-caption="MVP design (initial version)">
+      <img src="./assets/affinitydiagram.png" alt="Affinity diagram" class="slide"
+           data-caption="Affinity diagram from research">
+    </div>
+         <button class="nav prev" aria-label="Previous slide"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Next slide"> <i class="fa-solid fa-caret-right"></i></button>
+    
+  </div>
+   
+  
+  <div class="dots" role="tablist" aria-label="Choose slide"></div>
+  <p class="caption" aria-live="polite"></p>
+</section>
+
+<section class="card"> 
+        <h3 class="card-title">Testing design alternatives</h3>
+        <p>In the next phase, we expanded functionality to include monthly production estimates, cost-benefit analysis, 
+            off-grid capacity, and informational content. We iterated on design for the power, economy, and consumption pages, 
+            and tested prototypes with users. Insights from testing different design options showed a preference for simpler input, clearer graphs, 
+            and better explanations of technical terms.</p>
+    <div class="slider" role="region" aria-label="Image slideshow">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Slides">
+      <img src="./assets/use-alt1.png" alt="use-screen alt" class="slide is-active"
+           data-caption="Example of how we tested screen alternatives for the consumption screen">
+      <img src="./assets/use-alt2.png" alt="use-screen alt" class="slide"
+           data-caption="Example of how we tested screen alternatives for the consumption screen">
+      <img src="./assets/use-alt3.png" alt="use-screen alt" class="slide"
+           data-caption="Example of how we tested screen alternatives for the consumption screen">
+    </div>
+         <button class="nav prev" aria-label="Previous slide"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Next slide"> <i class="fa-solid fa-caret-right"></i></button>
+    
+  </div>
+   
+  
+  <div class="dots" role="tablist" aria-label="Choose slide"></div>
+  <p class="caption" aria-live="polite"></p>
+
+  <p>Based on the feedback from testing different design options, we made improvements to the desgn. To validate improvements, 
+    we conducted guerrilla testing with random participants. This confirmed the need for intuitive navigation and contextual guidance. 
+    We redesigned the consumption page with explanatory text and clear watt/hour displays, simplified graphs with labels, 
+    and made the profile easier to edit. Contextual info icons replaced a separate info page, keeping the interface clean.</p>
+    <span></span>
+    <div class="slider" role="region" aria-label="Image slideshow">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Slides">
+      <img src="./assets/figma-wireframe1.png" alt="use-screen alt" class="slide is-active"
+           data-caption="Figma wireframe of home screen">
+      <img src="./assets/figma-wireframe2.png" alt="use-screen alt" class="slide"
+           data-caption="Figma wireframe of effect screen">
+      <img src="./assets/figma-wireframe3.png" alt="use-screen alt" class="slide"
+           data-caption="Figma wireframe og savings screen">
+           <img src="./assets/figma-wireframe4.png" alt="use-screen alt" class="slide"
+           data-caption="Figma wireframe of info screen">
+           <img src="./assets/figma-wireframe5.png" alt="use-screen alt" class="slide"
+           data-caption="Figma wireframe of profile screen">
+    </div>
+         <button class="nav prev" aria-label="Previous slide"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Next slide"> <i class="fa-solid fa-caret-right"></i></button>
+    
+  </div>
+   
+  
+  <div class="dots" role="tablist" aria-label="Choose slide"></div>
+  <p class="caption" aria-live="polite"></p>
+
+  <p>During the design process we stumbled upon deadline and technical limitations that influenced design decisions. Because of this 
+    we had to make some compromises on both functionality and design. For instance prioritizing core functionality from the case description
+    and most useful functionality for the users. To reach the deadline we chose to drop a functionality comparing effect from solar panels to other 
+    energy sources. We also chose to not have a info screen, but instead itegrate info where needed in the app, which the users ended up preffering. 
+</p>
+</section>
+
+<section class="card"> 
+        <h3 class="card-title">Outcome</h3>
+
+  <p>
+    Before final delivery, we held a Technical Cleanup Day, reviewing and refactoring the code in rounds to ensure 
+    quality and shared ownership. The final product was a functional, user-tested solar estimation app that
+    calculates solar energy production using weather and roof data
+    provides intuitive visualizations of consumption and savings
+    guides users with contextual information and simplified flows</p>
+    
+    <p>This project gave me more knowledge about working in software teams, especially as a designer, as my main role in the team was design and research.
+    Key takeaways from this project includes the importance of early user involvement, 
+    simplifying complexity in both design and input, and maintaining flexibility when APIs or data 
+    sources posed challenges.</p>
+  
+    <div class="slider" role="region" aria-label="Image slideshow">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Slides">
+      <img src="./assets/final1.png" alt="log-in" class="slide is-active"
+           data-caption="Log in screen">
+      <img src="./assets/final2.png" alt="enter information" class="slide"
+           data-caption="Enter information for account">
+      <img src="./assets/final3.png" alt="polygon" class="slide"
+           data-caption="Functionality making it possible to draw polygon if roof size is unknown">
+           <img src="./assets/final4.png" alt="settings" class="slide"
+           data-caption="Settings where user can adjust profile and more">
+           <img src="./assets/final5.png" alt="profile" class="slide"
+           data-caption="Profile screen">
+           <img src="./assets/final6.png" alt="home-screen" class="slide"
+           data-caption="Home screen with notifications about weather conditions">
+           <img src="./assets/final7.png" alt="effect" class="slide"
+           data-caption="Effect screen showing expected power production">
+           <img src="./assets/final8.png" alt="income" class="slide"
+           data-caption="Income screen showing expected income and down payment">
+           <img src="./assets/final9.png" alt="consumption" class="slide"
+           data-caption="Consumption screen where you can choose appliances calculate how many hours you can use them">
+           <img src="./assets/final10.png" alt="consumption" class="slide"
+           data-caption="Consumption screen where you can choose appliances and calculate how many hours you can use them">
+    </div>
+         <button class="nav prev" aria-label="Previous slide"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Next slide"> <i class="fa-solid fa-caret-right"></i></button>
+    
+  </div>
+   
+  
+  <div class="dots" role="tablist" aria-label="Choose slide"></div>
+  <p class="caption" aria-live="polite"></p>
+</section>
+
+</body>
+</html>
