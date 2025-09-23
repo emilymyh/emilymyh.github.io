@@ -26,7 +26,7 @@
         align-items: center;
         padding: 1rem 3rem;
         background: #ffffff;
-        border-radius: 25px;
+        
     }
 
     #logo{
@@ -35,6 +35,7 @@
         font-size:x-large;
         font-weight: bold;
         color: var(--accent);
+        text-decoration: none;
     }
 
     #menu {
@@ -120,3 +121,162 @@
     /* Make header relatively positioned so the panel anchors to it */
     header { position: relative; }
   }
+
+  /* Process */
+   .card {
+        width: min(100% - 2rem, 800px);
+        margin: 20px auto;
+        padding: clamp(1rem, 3vw, 3rem);
+        background-color: white;
+        border-radius: 25px;
+        overflow-wrap: anywhere;
+      }
+      
+
+    /* About section */
+    .card-title {
+        font-size: large;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: var(--textSize);
+        color: var(--text);
+        font-weight: var(--textweight);
+        
+    }
+
+    .sub-title {
+        font-size: var(--textSize);
+        color: var(--text);
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .points {
+    list-style-type: disc; /* You can also use 'circle', 'square', or a custom bullet with 'content' in ::before */
+    padding-left: 1.5rem; /* space between bullet and text */
+    color: var(--text); /* text color */
+    font-size: var(--textSize);
+    font-weight: var(--textweight);
+  }
+
+  .points li {
+    margin-bottom: 0.5rem;
+  }
+
+  .rotated-sketch {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: rotate(270deg); 
+    margin: 10px auto; 
+    border: 2px solid var(--accent); 
+    border-radius: 8px; 
+  }
+
+  /* Figure and caption styling */
+.sketch-figure {
+    text-align: center; /* center the image and caption */
+    margin: 10px 0;
+}
+
+.sketch-figure figcaption {
+    margin: 0 12px ;
+    text-align: center;
+    font-size: clamp(14px, 2.6vw, 16px);
+    color: var(--text);
+    font-weight: 500;
+}
+
+
+/* Slideshow */
+.slider {
+  width: min(100% - 2rem, 800px);
+  margin: 20px auto;
+  border-radius: 25px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Only this inner box is positioned; it holds image + arrows */
+.viewport {
+  position: relative;
+  height: clamp(200px, 40vw, 420px);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Slides fill the viewport */
+.slides { position: relative; height: 100%; }
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* show whole picture */
+  object-position: center;
+  background: #fff;         /* letterbox color */
+  opacity: 0;
+  transition: opacity .35s ease;
+  border-radius: 25px;
+}
+.slide.is-active { opacity: 1; }
+
+/* Prev/Next buttons */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 42px; width: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: #fff;
+  color: var(--text);
+  display: grid; place-items: center;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.nav:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Dots are now in normal flow BELOW the image — no overlap possible */
+.slider .dots {
+  position: static;      /* important: not absolute */
+  transform: none;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  padding: .5rem 0;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 999px;
+  backdrop-filter: none;
+}
+.slider .dots button {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: 0; background: #ddd; cursor: pointer;
+}
+.slider .dots button[aria-selected="true"] { background: var(--accent); }
+
+/* Caption sits under the dots */
+.caption {
+  margin: 0 12px ;
+  text-align: center;
+  font-size: clamp(14px, 2.6vw, 16px);
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Small screens */
+@media (max-width: 640px) {
+  .nav { height: 36px; width: 36px; }
+  .viewport { height: clamp(180px, 55vw, 360px); }
+}
+
+
