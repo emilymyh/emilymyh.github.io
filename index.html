@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +12,30 @@
     <header id = "home">
         <a href="#home" id="logo">Emily Omholt Myhre</a>
        
-        <button id="menu-toggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <button id="menu-toggle" class="hamburger" aria-label="Åpne meny" aria-expanded="false" aria-controls="menu">
         <span></span><span></span><span></span>
         </button>
 
         <ul id="menu">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">Om meg</a></li>
+            <li><a href="#skills">Ferdigheter</a></li>
+            <li><a href="#projects">Prosjekter</a></li>
+            <nav id="language-switcher">
+            <a href="#" class="active">NO</a> | 
+            <a href="https://emilyomyhre.no/eng-version/index.html">ENG</a>
+        </nav>
         </ul>
-
-
-        
-
     </header>
 
     <section class="profile">
         <div class="profilbilde">
-          <img src="./assets/profilbilde.png" alt="bilde">
+          <img src="./assets/profilbilde.png" alt="profilbilde">
         </div>
       
         <div class="profile-text">
-          <h1>Hi! I'm Emily</h1>
-          <h2>I'm a UX design student</h2>
-          <a href="mailto:emilyomyhre@gmail.com" class="button">Contact me!</a>
+          <h1>Hei! Jeg heter Emily</h1>
+          <h2>Jeg er en UX-designstudent</h2>
+          <a href="mailto:emilyomyhre@gmail.com" class="button">Kontakt meg!</a>
           <div class="social-icons">
             <a href="https://github.com/emilymyh?tab=repositories" target="_blank" aria-label="GitHub">
               <i class="fa-brands fa-github"></i>
@@ -43,10 +43,10 @@
             <a href="https://www.linkedin.com/in/emily-omholt-myhre-4198a7295" target="_blank" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="mailto:emilyomyhre@gmail.com" aria-label="Email">
+            <a href="mailto:emilyomyhre@gmail.com" aria-label="E-post">
               <i class="fa-solid fa-envelope"></i>
             </a>
-            <a href="cv.html" aria-label="Contact Card">
+            <a href="cv.html" aria-label="Kontaktkort">
               <i class="fa-solid fa-address-card"></i>
             </a>
         </div>
@@ -55,23 +55,22 @@
       </section>
     
     <section class="card">
-        <h3 id="about">About me</h3>
+        <h3 id="about">Om meg</h3>
         <p class="description">
-            I'm currently pursuing a master's degree in Informatics: Design, use and interaction at the University of Oslo. 
-            I’m passionate about creating user-friendly digital experiences that blend design with 
-            functionality. I have skills within in user research, prototyping and programming which I 
-            hope to apply to projects in the future. I’m excited to continue growing in the field and 
-            contribute  to innovative projects.
+            Jeg tar for tiden en mastergrad i Informatikk: design, bruk og interaksjon ved Universitetet i Oslo. 
+            Jeg brenner for å skape brukervennlige digitale opplevelser som kombinerer design med funksjonalitet. 
+            Jeg har ferdigheter innen brukerundersøkelser, prototyping og programmering som jeg håper å kunne 
+            bruke i fremtidige prosjekter. Jeg gleder meg til å fortsette å utvikle meg i feltet og bidra til innovative prosjekter.
         </p>
     </section>
 
     <section class="card">
-        <h3 id="skills">Skills</h3>
+        <h3 id="skills">Ferdigheter</h3>
         <ul class= "two-col">
             <li>Figma</li>
             <li>Prototyping</li>
-            <li>Universal design</li>
-            <li>App development</li>
+            <li>Universell utforming</li>
+            <li>App-utvikling</li>
             <li>Java</li>
             <li>Python</li>
             <li>Kotlin</li>
@@ -79,39 +78,39 @@
         </ul>
     </section>
 
-    <h3 id="projects">Projects</h3>
+    <h3 id="projects">Prosjekter</h3>
     <section class="project-grid">
         <div class = "card">
-            <h3 class = "project-title">Desktop App Design</h3>
+            <h3 class = "project-title">Design av skrivebordsapp</h3>
             <img src="./assets/prosjekt-1-banner.png" alt="IN1050-prosjekt">
-            <p>A web app prototype i made in Figma in the course IN1050 - Introduction to design, use and interaction. 
-                I used data from interviews with users to create an app design that could help create a good social and 
-                work environment in home offices. 
+            <p>En prototype av en webapp jeg laget i Figma i emnet IN1050 – Introduksjon til design, bruk og interaksjon. 
+                Jeg brukte data fra intervjuer med brukere til å lage et app-design som kunne bidra til et godt sosialt 
+                og arbeidsmiljø i hjemmekontor. 
             </p>
-            <a href="https://emilymyh.github.io/project1/project-1.html" class="button">Read more!</a>
+            <a href="https://emilymyh.github.io/project1/project-1.html" class="button">Les mer!</a>
         </div>
         <div class = "card">
-            <h3 class = "project-title">Laptop light prototype</h3>
+            <h3 class = "project-title">Prototype av bærbar datalys</h3>
             <img src="./assets/in1060-banner 1.png" alt="IN1060-prosjekt">
             <p>
-                In this project our goal was to create a desktop light with pause intervals, that helps with maintaining 
-                a healthy vision and work balance. We focused on user involvement in the design process and performed 
-                interviews, workshops to analyze and retrieve data used to design both low- and high-fidelity prototypes
+                I dette prosjektet var målet vårt å lage en skrivebordslampe med pauseintervaller som hjelper med å opprettholde 
+                god øyehelse og en balansert arbeidshverdag. Vi fokuserte på brukerinvolvering i designprosessen og gjennomførte 
+                intervjuer og workshops for å samle og analysere data som ble brukt til å utvikle både lav- og høyoppløselige prototyper.
             </p>
-            <a href="https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/artifakt/" class="button">Read more!</a>
+            <a href="https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/artifakt/" class="button">Les mer!</a>
         </div>
         <div class = "card">
             <h3 class = "project-title">SolarCalc</h3>
             <img src="./assets/test.png" alt="IN2000">
             <p>
-                This was a group based project with a focus on agile software development. Our goal was to make an Android application 
-                that makes it easier to get information about cost of installing solar panels on a cabin/house and how much you can save
-                 on using solar panels. The app also includes a function that lets you choose different housewares and how much power 
-                 they will use for off-grid cabins. The app also shows the users house on a map and weather conditions that can affect 
-                 the panels power. During the project we had interviews and user-testing with users who were interested in installing 
-                 solar panels. 
+                Dette var et gruppearbeid med fokus på smidig programvareutvikling. Målet vårt var å lage en Android-applikasjon 
+                som gjør det enklere å få informasjon om kostnader ved å installere solcellepaneler på en hytte/et hus, og hvor mye 
+                man kan spare ved å bruke solenergi. Appen inkluderer også en funksjon der man kan velge ulike husholdningsapparater 
+                og se hvor mye strøm de bruker for hytter uten strømnett. I tillegg viser appen brukerens hus på et kart og gir værdata 
+                som kan påvirke panelenes effekt. Under prosjektet hadde vi intervjuer og brukertesting med personer som var interessert 
+                i å installere solcellepaneler. 
             </p>
-            <a href="https://emilymyh.github.io/project3/project-3.html" class="button">Read more!</a>
+            <a href="https://emilymyh.github.io/project3/project-3.html" class="button">Les mer!</a>
         </div>
     </section>
 </body>

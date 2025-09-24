@@ -63,6 +63,27 @@
         transition: all 0.3s ease;
     }
 
+    #language-switcher {
+    margin-left: auto; 
+    font-size: var(--textSize);
+}
+
+  #language-switcher a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+  #language-switcher a:hover {
+    color: var(--accent);
+}
+
+  #language-switcher a.active {
+    font-weight: bold;
+    color: var(--accent); 
+}
+
     /* Hamburger menu (for smaller screens)*/
 .hamburger {
     display: none;
