@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Omholt Myhre - Prosjekter</title>
+    <link rel="stylesheet" href="project3-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="project3-script.js" defer></script>
+</head>
+<body>
+    <header>
+      <a href="https://emilyomyhre.no/" id="logo">Emily Omholt Myhre</a>
+       
+        <button id="menu-toggle" class="hamburger" aria-label="Åpne meny" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+        </button>
+
+        <ul id="menu">
+            <li><a href="#goal">Mål</a></li>
+            <li><a href="#process">Prosess</a></li>
+            <li><a href="#outcome">Resultat</a></li>
+        </ul>
+    </header>
+
+    <section class="card" id="goal"> 
+        <h3 class="card-title">Om dette prosjektet</h3>
+        <p>Dette prosjektet var et gruppearbeid med fokus på smidig programvareutvikling. Vi satte oss som mål å designe en 
+            app som estimerer solenergiproduksjon for hus og hytter i Norge. Målet var å kombinere værdata, 
+            lokasjon og takdetaljer til handlingsrettede innsikter for brukere som vurderer solcellepaneler. Appen inkluderer også en 
+            funksjon der du kan velge ulike husholdningsapparater og hvor mye strøm de vil bruke for hytter uten strømnett. Appen 
+            viser brukerens hus på et kart sammen med værforhold som kan påvirke panelenes effekt. Under prosjektet 
+            hadde vi intervjuer og brukertesting med brukere som var interessert i å installere solcellepaneler. 
+        </p>
+</section>
+
+    <section class="card" id="process"> 
+        <h3 class="card-title">Prosess</h3>
+        <p> Vi startet designprosessen med å definere funksjonelle og ikke-funksjonelle krav, og snevret deretter inn til 
+            et MVP fokusert på kjernefunksjoner: adresseoppslag, integrasjon av værdata, beregning av solutbytte og estimater for strømproduksjon. 
+            Vi brukte Crazy 8s til idéutvikling, laget wireframes i Figma og validerte tidlige konsepter gjennom brukerintervjuer.
+
+            MVP-en ble utviklet med Scrumban, med ukentlige sprinter, gjennomganger og retrospektiver. 
+            Tidlige utfordringer inkluderte ufullstendige API-data, som vi løste ved å bruke tilgjengelige statiske datasett. Demoen bekreftet 
+            at beregningene fungerte, men avdekket behov for en tydeligere produktretning. Basert på tilbakemeldinger forbedret vi kravene 
+            og bygget en brukerhistorie:
+            «Brukeren skal få et estimat på potensiell solenergiproduksjon for sitt hus eller hytte basert på stedsspesifikke 
+            værdata.»</p>
+    <div class="slider" role="region" aria-label="Bildekarusell">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Lysbilder">
+      <img src="./assets/first-sketch1.png" alt="Første skisse" class="slide is-active"
+           data-caption="Første skisse av innloggingsskjerm">
+      <img src="./assets/first-sketch2.png" alt="Alternativ skisse" class="slide"
+           data-caption="Første skisse av startskjerm">
+      <img src="./assets/first-sketch3.png" alt="Skisse detaljer" class="slide"
+           data-caption="Første skisse av beregningsskjerm">
+      <img src="./assets/first-wireframe1.png" alt="Wireframe" class="slide"
+           data-caption="Første wireframe-iterasjon">
+      <img src="./assets/MVP.jpg" alt="MVP design" class="slide"
+           data-caption="MVP-design (første versjon)">
+      <img src="./assets/affinitydiagram.png" alt="Affinitetsdiagram" class="slide"
+           data-caption="Affinitetsdiagram fra research">
+    </div>
+         <button class="nav prev" aria-label="Forrige bilde"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Neste bilde"> <i class="fa-solid fa-caret-right"></i></button>
+    
+  </div>
+   
+  
+  <div class="dots" role="tablist" aria-label="Velg bilde"></div>
+  <p class="caption" aria-live="polite"></p>
+</section>
+
+<section class="card"> 
+        <h3 class="card-title">Testing av designalternativer</h3>
+        <p>I neste fase utvidet vi funksjonaliteten til å inkludere månedlige produksjonsestimater, kost-nytte-analyse, 
+            off-grid-kapasitet og informasjonsinnhold. Vi itererte på designet for sider om effekt, økonomi og forbruk, 
+            og testet prototyper med brukere. Innsikter fra testingen viste en preferanse for enklere input, tydeligere grafer 
+            og bedre forklaringer av tekniske begreper.</p>
+    <div class="slider" role="region" aria-label="Bildekarusell">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Lysbilder">
+      <img src="./assets/use-alt1.png" alt="Forbruksskjerm test" class="slide is-active"
+           data-caption="Eksempel på hvordan vi testet skjermalternativer for forbrukssiden">
+      <img src="./assets/use-alt2.png" alt="Forbruksskjerm test" class="slide"
+           data-caption="Eksempel på hvordan vi testet skjermalternativer for forbrukssiden">
+      <img src="./assets/use-alt3.png" alt="Forbruksskjerm test" class="slide"
+           data-caption="Eksempel på hvordan vi testet skjermalternativer for forbrukssiden">
+    </div>
+         <button class="nav prev" aria-label="Forrige bilde"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Neste bilde"> <i class="fa-solid fa-caret-right"></i></button>
+    
+  </div>
+  <div class="dots" role="tablist" aria-label="Velg bilde"></div>
+  <p class="caption" aria-live="polite"></p>
+
+  <p>Basert på tilbakemeldingene fra testing av ulike designalternativer gjorde vi forbedringer. For å validere disse gjennomførte vi geriljatesting med tilfeldige deltakere. Dette bekreftet behovet for intuitiv navigasjon og kontekstuell veiledning. 
+    Vi redesignet forbrukssiden med forklarende tekst og tydelige watt/time-visninger, forenklede grafer med merkelapper 
+    og gjorde profilen enklere å redigere. Kontekstuelle info-ikoner erstattet en egen infoside, og bidro til et renere grensesnitt.</p>
+
+    <div class="slider" role="region" aria-label="Bildekarusell">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Lysbilder">
+      <img src="./assets/figma-wireframe1.png" alt="Figma wireframe hjem" class="slide is-active"
+           data-caption="Figma wireframe av startskjerm">
+      <img src="./assets/figma-wireframe2.png" alt="Figma wireframe effekt" class="slide"
+           data-caption="Figma wireframe av effekt-skjerm">
+      <img src="./assets/figma-wireframe3.png" alt="Figma wireframe sparing" class="slide"
+           data-caption="Figma wireframe av spare-skjerm">
+           <img src="./assets/figma-wireframe4.png" alt="Figma wireframe info" class="slide"
+           data-caption="Figma wireframe av infoskjerm">
+           <img src="./assets/figma-wireframe5.png" alt="Figma wireframe profil" class="slide"
+           data-caption="Figma wireframe av profilskjerm">
+    </div>
+         <button class="nav prev" aria-label="Forrige bilde"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Neste bilde"> <i class="fa-solid fa-caret-right"></i></button>
+    
+  </div>
+  <div class="dots" role="tablist" aria-label="Velg bilde"></div>
+  <p class="caption" aria-live="polite"></p>
+
+  <p>Underveis i designprosessen støtte vi på tidsfrister og tekniske begrensninger som påvirket designvalgene. På grunn av dette 
+    måtte vi gjøre noen kompromisser på både funksjonalitet og design – for eksempel å prioritere kjernefunksjonalitet fra casebeskrivelsen 
+    og det som var mest nyttig for brukerne. For å nå fristen valgte vi å droppe en funksjon for å sammenligne effekt fra solceller med andre 
+    energikilder. Vi valgte også å ikke ha en egen infoside, men i stedet integrere informasjon der det var nødvendig i appen, noe brukerne endte opp med å foretrekke. 
+</p>
+</section>
+
+<section class="card"> 
+        <h3 class="card-title">Resultat</h3>
+
+  <p>
+    Før endelig levering hadde vi en «Technical Cleanup Day», der vi gjennomgikk og refaktorerte koden i runder for å sikre 
+    kvalitet og delt eierskap. Sluttproduktet var en fungerende, brukertestet solestimeringsapp som:
+    beregner solenergiproduksjon ved hjelp av vær- og takdata, 
+    gir intuitive visualiseringer av forbruk og besparelser, 
+    og veileder brukere med kontekstuell informasjon og forenklede prosesser.
+  </p>
+    
+  <p>Dette prosjektet ga meg mer kunnskap om å jobbe i programvareteam, spesielt som designer, da min hovedrolle var design og research.
+    Viktige lærdommer fra prosjektet inkluderer betydningen av tidlig brukerinvolvering, 
+    å forenkle kompleksitet både i design og input, og å opprettholde fleksibilitet når API-er eller datakilder 
+    skaper utfordringer.</p>
+  
+    <div class="slider" role="region" aria-label="Bildekarusell">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Lysbilder">
+      <img src="./assets/final1.png" alt="innlogging" class="slide is-active"
+           data-caption="Innloggingsskjerm">
+      <img src="./assets/final2.png" alt="registrer informasjon" class="slide"
+           data-caption="Registrer informasjon for konto">
+      <img src="./assets/final3.png" alt="polygon" class="slide"
+           data-caption="Funksjon som gjør det mulig å tegne polygon hvis takstørrelsen er ukjent">
+           <img src="./assets/final4.png" alt="innstillinger" class="slide"
+           data-caption="Innstillinger hvor brukeren kan justere profil og mer">
+           <img src="./assets/final5.png" alt="profil" class="slide"
+           data-caption="Profilskjerm">
+           <img src="./assets/final6.png" alt="hjem" class="slide"
+           data-caption="Startskjerm med varsler om værforhold">
+           <img src="./assets/final7.png" alt="effekt" class="slide"
+           data-caption="Effektskjerm som viser forventet strømproduksjon">
+           <img src="./assets/final8.png" alt="inntekt" class="slide"
+           data-caption="Inntektsskjerm som viser forventet inntekt og nedbetaling">
+           <img src="./assets/final9.png" alt="forbruk" class="slide"
+           data-caption="Forbruksskjerm hvor du kan velge apparater og beregne hvor mange timer du kan bruke dem">
+           <img src="./assets/final10.png" alt="forbruk" class="slide"
+           data-caption="Forbruksskjerm hvor du kan velge apparater og beregne hvor mange timer du kan bruke dem">
+    </div>
+         <button class="nav prev" aria-label="Forrige bilde"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Neste bilde"> <i class="fa-solid fa-caret-right"></i></button>
+    
+  </div>
+  <div class="dots" role="tablist" aria-label="Velg bilde"></div>
+  <p class="caption" aria-live="polite"></p>
+</section>
+
+</body>
+</html>

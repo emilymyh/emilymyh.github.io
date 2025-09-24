@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Omholt Myhre - Prosjekter</title>
+    <link rel="stylesheet" href="project1-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="project1-script.js" defer></script>
+</head>
+<body>
+    <header>
+      <a href="https://emilyomyhre.no/" id="logo">Emily Omholt Myhre</a>
+       
+        <button id="menu-toggle" class="hamburger" aria-label="Åpne meny" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+        </button>
+
+        <ul id="menu">
+            <li><a href="#goal">Mål</a></li>
+            <li><a href="#process">Prosess</a></li>
+            <li><a href="#outcome">Resultat</a></li>
+        </ul>
+    </header>
+
+    <section class="card" id="goal"> 
+        <h3 class="card-title">Om dette prosjektet</h3>
+        <p>Dette prosjektet utforsket hvordan digitale verktøy kan forbedre trivsel og 
+            sosial tilhørighet for personer i alderen 50–60 år som hovedsakelig jobber hjemmefra. 
+            Gjennom intervjuer, analyse og prototyping utviklet jeg 
+            høyoppløselige løsninger basert på faktiske brukerbehov, med fokus på enkle
+            og intuitive måter å holde kontakten med kolleger på. 
+        </p>
+</section>
+
+    <section class="card" id="process"> 
+        <h3 class="card-title">Tidlig prosess</h3>
+        <p> Jeg startet med dybdeintervjuer om arbeidsvaner, arbeidsflyt og 
+            trivsel. Dataene ble transkribert, fargekodet og organisert 
+            i et affinitetsdiagram, som fremhevet brukernes behov for bedre 
+            sosial kontakt og støtte i arbeidshverdagen.</p>
+
+    <div class="slider" role="region" aria-label="Bildekarusell">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Lysbilder">
+      <img src="./assets/kategorisering_oblig2.PNG" alt="Affinitetsdiagram" class="slide is-active"
+           data-caption="Affinitetsdiagram fra intervju">
+      <img src="./assets/behov.PNG" alt="Innsikter" class="slide"
+           data-caption="Innsikter fra første intervjuanalyse">
+    </div>
+         <button class="nav prev" aria-label="Forrige bilde"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Neste bilde"> <i class="fa-solid fa-caret-right"></i></button>
+  </div>
+   
+  <div class="dots" role="tablist" aria-label="Velg bilde"></div>
+  <p class="caption" aria-live="polite"></p>
+
+  <h3 class="sub-title">Innsikter</h3>
+        <ul class="points">
+            <li>Behov for lavterskel kontakt med kolleger</li>
+            <li>Ønske om å dele arbeidshverdagen uformelt</li>
+            <li>Viktig å kunne stille spørsmål uten å oppleves som påtrengende</li>
+        </ul>
+
+        <figure class="sketch-figure">
+        <img src="./assets/skisse_app.PNG" alt="skisse" class="rotated-sketch">
+        <figcaption>Skisse av appen basert på innsamlede innsikter</figcaption>
+</figure>
+</section>
+
+<section class="card" id="outcome"> 
+        <h3 class="card-title">Resultat</h3>
+  <p>
+    Jeg utviklet en høyoppløselig prototype som adresserte brukernes behov. 
+    Prototypen fokuserte på en PC-app med fire hovedfunksjoner: en anonym spørsmål-og-svar-side, chat, et sosialt feed, og profilsider med 
+    en kontaktoversikt. Designet ble testet og evaluert, med vekt på enkel navigasjon og sosial interaksjon.
+   </p>
+
+    <div class="slider" role="region" aria-label="Bildekarusell">
+  <div class="viewport">
+    <div class="slides" role="group" aria-label="Lysbilder">
+      <img src="./assets/profilside.PNG" alt="profil" class="slide is-active"
+           data-caption="Profil der du kan få tilgang til kontakter og se profilen">
+      <img src="./assets/chat.PNG" alt="chat" class="slide"
+           data-caption="Chat der du kan chatte eller ringe kontakter">
+      <img src="./assets/spørsmålside.PNG" alt="Q&A" class="slide"
+           data-caption="Anonym spørsmål-og-svar-side der du kan stille arbeidsrelaterte spørsmål">
+      <img src="./assets/feed.PNG" alt="feed" class="slide"
+           data-caption="Feed der du kan dele arbeidshverdagen med kolleger, som møter ønsket om å dele erfaringer fra arbeidsdagen">
+    </div>
+         <button class="nav prev" aria-label="Forrige bilde"> <i class="fa-solid fa-caret-left"></i></button>
+        <button class="nav next" aria-label="Neste bilde"> <i class="fa-solid fa-caret-right"></i></button>
+  </div>
+   
+  <div class="dots" role="tablist" aria-label="Velg bilde"></div>
+  <p class="caption" aria-live="polite"></p>
+
+  <h3 class="sub-title">Lærdommer</h3>
+    <p>Gjennom dette prosjektet fikk jeg erfaring med å bruke HCI-metoder som intervjuer, analyse og prototyping for å oversette 
+        brukerbehov til konkrete designløsninger. Jeg lærte viktigheten av å gjøre innsikter om til funksjonalitet som oppleves både intuitiv 
+        og meningsfull i hverdagen.</p>
+  
+</section>
+
+</body>
+</html>
