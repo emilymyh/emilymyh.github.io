@@ -111,7 +111,7 @@
   }
   
   /* Animate to "X" when open */
-  #menu.open + .not-used { /* placeholder to avoid confusion */ }
+  #menu.open + .not-used {  }
   .hamburger.is-open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
   .hamburger.is-open span:nth-child(2) { opacity: 0; }
   .hamburger.is-open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
@@ -123,7 +123,7 @@
     /* Turn the menu into a dropdown panel */
     #menu {
       position: absolute;
-      top: calc(100% + 8px);      /* below the header */
+      top: calc(100% + 8px);      
       right: 1.5rem;
       left: 1.5rem;
       display: none;   
@@ -139,7 +139,7 @@
     /* Show when open */
     #menu.open { display: flex; }
   
-    /* Make header relatively positioned so the panel anchors to it */
+    
     header { position: relative; }
   }
 
@@ -182,8 +182,8 @@
     .button {
         border-radius: 10px;
         background-color: white;
-        border: 3px solid var(--accent); /* solid border with one color */
-        padding: 0.5rem 1rem;            /* space inside button */
+        border: 3px solid var(--accent); 
+        padding: 0.5rem 1rem;            
         color: var(--text);
         font-size: var(--textSize);
         font-weight: var(--textweight);
@@ -201,19 +201,19 @@
 
     .social-icons {
         display: flex;
-        justify-content: center;   /* center under header */
-        gap: 1.5rem;               /* space between icons */
+        justify-content: center;   
+        gap: 1.5rem;              
         margin-top: 0.5rem;
       }
       
       .social-icons a {
-        font-size: 1.5rem;         /* icon size */
-        color: var(--text);      /* your pink */
+        font-size: 1.5rem;         
+        color: var(--text);     
         transition: color 0.3s ease;
       }
       
       .social-icons a:hover {
-        color: var(--accent);        /* hover effect */
+        color: var(--accent);        
       }
 
     /* Card */
@@ -267,10 +267,10 @@
       }
 
       .two-col li::before {
-        font-family: "Font Awesome 6 Free";  /* required */
-        font-weight: 900;                    /* solid icons */
-        content: "\f058";                    /* Unicode for fa-circle-check */
-        color: #ffbbe5;                      /* your pink accent */
+        font-family: "Font Awesome 6 Free";  
+        font-weight: 900;                    
+        content: "\f058";                    
+        color: #ffbbe5;                      
         margin-right: 8px;
       }
       
@@ -294,7 +294,7 @@
 /* --- Projects grid: 2 cols + gap, collapse to 1 on small screens --- */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* exactly 2 columns */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
     column-gap: 2rem;
     row-gap: 20px;   
     max-width: 1100px;
@@ -307,7 +307,7 @@
     .project-grid { grid-template-columns: 1fr; }
   }
   
-  /* Reset cards ONLY inside the grid */
+ 
   .project-grid > .card {
     width: auto;          
     margin: 0;            
@@ -316,7 +316,7 @@
     flex-direction: column;
     border-radius: 25px;
     background: #fff;
-    box-sizing: border-box; /* ensures padding doesn't overflow the grid cell */
+    box-sizing: border-box; 
   }
   
   /* Keep paragraph left, but allow centered button */
@@ -327,7 +327,7 @@
     align-self: center;  
   }
   
-  /* Optional: add a tiny internal gap so content doesn't touch edges on tiny screens */
+  
   .project-grid { padding-inline: 1rem; }
   
 

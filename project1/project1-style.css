@@ -90,7 +90,7 @@
   }
   
   /* Animate to "X" when open */
-  #menu.open + .not-used { /* placeholder to avoid confusion */ }
+  #menu.open + .not-used {  }
   .hamburger.is-open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
   .hamburger.is-open span:nth-child(2) { opacity: 0; }
   .hamburger.is-open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
@@ -102,7 +102,7 @@
     /* Turn the menu into a dropdown panel */
     #menu {
       position: absolute;
-      top: calc(100% + 8px);      /* below the header */
+      top: calc(100% + 8px);      
       right: 1.5rem;
       left: 1.5rem;
       display: none;   
@@ -157,9 +157,9 @@
     }
 
     .points {
-    list-style-type: disc; /* You can also use 'circle', 'square', or a custom bullet with 'content' in ::before */
-    padding-left: 1.5rem; /* space between bullet and text */
-    color: var(--text); /* text color */
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    color: var(--text); 
     font-size: var(--textSize);
     font-weight: var(--textweight);
   }
@@ -180,7 +180,7 @@
 
   /* Figure and caption styling */
 .sketch-figure {
-    text-align: center; /* center the image and caption */
+    text-align: center; 
     margin: 10px 0;
 }
 
@@ -202,7 +202,7 @@
   overflow: hidden;
 }
 
-/* Only this inner box is positioned; it holds image + arrows */
+
 .viewport {
   position: relative;
   height: clamp(200px, 40vw, 420px);
@@ -217,9 +217,9 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;      /* show whole picture */
+  object-fit: contain;      
   object-position: center;
-  background: #fff;         /* letterbox color */
+  background: #fff;         
   opacity: 0;
   transition: opacity .35s ease;
   border-radius: 25px;
@@ -244,9 +244,9 @@
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Dots are now in normal flow BELOW the image — no overlap possible */
+
 .slider .dots {
-  position: static;      /* important: not absolute */
+  position: static;      
   transform: none;
   display: flex;
   justify-content: center;
