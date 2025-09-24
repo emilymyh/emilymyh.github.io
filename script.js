@@ -7,7 +7,7 @@ const btn = document.getElementById('menu-toggle');
     btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
-  // Optional: close when a link is clicked (good UX)
+  
   menu.addEventListener('click', (e) => {
     if (e.target.closest('a')) {
       menu.classList.remove('open');

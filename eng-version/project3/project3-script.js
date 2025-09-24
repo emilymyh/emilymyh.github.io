@@ -79,7 +79,7 @@
     });
     slider.tabIndex = 0; // focusable for arrow keys
 
-    // Optional: swipe support (per slider)
+    // swipe support (per slider)
     let startX = null;
     slider.addEventListener('touchstart', (e) => (startX = e.touches[0].clientX), { passive: true });
     slider.addEventListener('touchend', (e) => {
