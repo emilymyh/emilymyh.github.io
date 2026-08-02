@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efe8ff">
+  <meta name="description" content="Casestudie av 20/20 Vision - en fysisk lystimer for mer behagelig og skånsom skjermbruk.">
+  <title>20/20 Vision - Casestudie av Emily Omholt Myhre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../case-study.css">
+  <script src="../case-study.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Hopp til innhold</a>
+  <header class="site-header case-header">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">E</span><span>Emily Omholt Myhre</span></a>
+    <nav class="site-nav" aria-label="Prosjektnavigasjon">
+      <a href="#problem">Problem</a><a href="#prosess">Prosess</a><a href="#resultat">Resultat</a>
+      <span class="language"><strong aria-current="page">NO</strong><a href="../eng-version/2020-vision/index.html" lang="en">EN</a></span>
+    </nav>
+  </header>
+
+  <main id="main" class="case-main">
+    <section class="case-hero section reveal">
+      <a class="case-back" href="../index.html#arbeid">Tilbake til arbeid</a>
+      <p class="case-kicker">2024</p>
+      <h1>20/20 Vision</h1>
+      <p class="case-deck">En bærbar lystimer som fremmer sunnere skjermvaner gjennom fokuserte arbeidsøkter, tydelige pauser og stemningsskapende lys.</p>
+      <dl class="case-facts">
+        <div><dt>Min rolle</dt><dd>Research, design & prototyping</dd></div>
+        <div><dt>Varighet</dt><dd>6 uker</dd></div>
+        <div><dt>Verktøy</dt><dd>Arduino, 3D-print & LED</dd></div>
+        <div><dt>Kontekst</dt><dd>UiO · IN1060 · 2024</dd></div>
+      </dl>
+      <div class="case-cover vision-cover"><img src="../assets/project-2020-vision.png" alt="20/20 Vision med digital brukssituasjon og fysisk prototype" width="1637" height="983"></div>
+    </section>
+
+    <section class="case-section section" id="problem">
+      <div class="case-section-label reveal"><p>01 · Problemet</p><h2>Bedre pauser fra skjermen</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Langvarig skjermbruk kan gi midlertidig ubehag som irriterte øyne, hodepine, sløret syn og smerter i nakke og rygg.</p>
+        <p>ArtiFakt-gruppen ønsket å utvikle en nyttig, skjermfri løsning for unge voksne som bruker skjerm til arbeid eller fritid. Utgangspunktet var bredt: avstand, lysstyrke, kontrast, og tidsintervaller kunne alle påvirke opplevelsen.</p>
+        <div class="callout"><p>Problemstilling: Hvordan kan en fysisk artefakt gjøre gode skjermpauser lettere uten å oppleves som enda en forstyrrelse?</p></div>
+        <p>En domeneekspert introduserte 20/20/20-regelen: etter 20 minutter med skjerm ser brukeren i 20 sekunder på noe omtrent seks meter unna. Denne regelen ble et viktig utgangspunkt, men måtte tilpasses brukernes faktiske preferanser.</p>
+      </div>
+    </section>
+
+    <section class="case-section section" id="prosess">
+      <div class="case-section-label reveal"><p>02 · Prosessen</p><h2>Brukerne valgte retningen</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Vi brukte kvalitative metoder gjennom hele prosessen: dybdeintervjuer, observasjon, fokusgrupper, oppgavebasert testing og en avsluttende evaluering.</p>
+        <p>To semistrukturerte intervjuer og observasjon av skjermbruk ga innsikt i holdning, skjermavstand, pausehyppighet og opplevde symptomer. Funnene ble analysert i affinitydiagrammer og tatt videre til to workshops med fokusgruppen.</p>
+        <div class="gallery" data-gallery aria-label="Research og analyse">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/affinity-interviews.png" alt="Affinitetsdiagram fra de første intervjuene" data-caption="Analyse av intervjuer om skjermvaner og synshelse">
+            <img class="gallery-slide" src="assets/workshop.jpg" alt="Deltakere under workshop" data-caption="Workshop med fokusgruppen">
+            <img class="gallery-slide" src="assets/affinity-workshop.png" alt="Affinitetsdiagram fra workshop" data-caption="Induktiv analyse av ideer og tilbakemeldinger">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+        <p>I den andre workshopen presenterte vi tre lavoppløselige konsepter: en stasjonær avstandsmåler, en bærbar avstandsmåler og en lysbasert timer. Brukerne viste tydelig størst interesse for timeren. Den passet også godt til kurstemaet «av/på»: lyset slås av og på, samtidig som brukeren veksler mellom å være på og av skjermen.</p>
+        <div class="gallery" data-gallery aria-label="Tidlige konsepter">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/distance-stationary.png" alt="Tidlig modell av stasjonær avstandsmåler" data-caption="Konsept 1: stasjonær avstandsmåler på skjermen">
+            <img class="gallery-slide" src="assets/distance-wearable.png" alt="Tidlig modell av bærbar avstandsmåler" data-caption="Konsept 2: bærbar avstandsmåler">
+            <img class="gallery-slide" src="assets/light-timer.png" alt="Tidlig modell av lysbasert timer" data-caption="Konsept 3: lysbasert timer - brukernes foretrukne retning">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+        <p>Lys og tid ledet formutforskningen mot solen og soluret. Et gyllent arbeidslys, rosa og lilla kveldsfarger og en dynamisk «disco-modus» ga produktet karakter, mens den ovale formen gjorde dockingstasjonen mindre og lettere å transportere.</p>
+        <figure class="process-image"><img src="assets/sun-concept.png" alt="Skisser som kobler sol, lys og solur til produktets form"><figcaption>Solur som formkonsept for en artefakt bygget rundt lys og tid.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="case-section section" id="resultat">
+      <div class="case-section-label reveal"><p>03 · Resultatet</p><h2>En fysisk rytme for arbeid og pause</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Den endelige prototypen kombinerer en LED-stripe på den bærbare datamaskinen med en kompakt dockingstasjon formet som et solur.</p>
+        <p>Arbeidsøktene varer i 20 minutter. To flyttbare kuler velger ett, fem eller femten minutters pause, som var lengder brukerne foretrakk fremfor de opprinnelige 20 sekundene. En tredje kule aktiverer dynamisk fargemodus. En spak slår systemet av og på, mens en dimmer justerer lysstyrken.</p>
+        <figure class="process-image"><img src="assets/final-prototype.png" alt="Den ferdige 20/20 Vision-prototypen med en rund dockingstasjon i tre og LED-lys montert på en bærbar datamaskin"><figcaption>Den ferdige prototypen i bruk: dockingstasjonen samler valg av pause, lysmodus og styring i ett fysisk grensesnitt.</figcaption></figure>
+        <ul class="insight-list">
+          <li><span>01</span>LED-stripen gir synlig tilbakemelding uten å kreve en ny skjerm.</li>
+          <li><span>02</span>Fysiske kuler gjør pausevalg konkret og lett å forstå.</li>
+          <li><span>03</span>Arbeidslys og dynamiske farger kombinerer nytte med en mer personlig opplevelse.</li>
+        </ul>
+        <figure class="process-image"><img src="assets/circuit.png" alt="Sammenligning av kretsen før og etter teknisk utvikling"><figcaption>Utvikling av den tekniske implementasjonen gjennom prosjektet.</figcaption></figure>
+        <div class="outcome-banner"><strong>Viktigste læring</strong> Brukerinvolveringen påvirket både konseptet og interaksjonen. Basert på tilbakemeldinger gikk vi bort fra avstandsmåling, utvidet pausenes varighet og prioriterte en bærbar løsning. Prosessen viste verdien av å la fysiske prototyper og brukere forme prosjektets retning.</div>
+        <a class="text-link source-link" href="https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/artifakt/" target="_blank" rel="noopener">Se den opprinnelige ArtiFakt-prosjektsiden <span aria-hidden="true"><i class="fa-solid fa-up-right-from-square"></i></span></a>
+        <a class="text-link source-link" href="https://www.figma.com/proto/Q0yJp0fR9TPk6FxD6I1fST/Presentasjon-oblig-1?page-id=0%3A1&amp;type=design&amp;node-id=13-2&amp;viewport=-1065%2C253%2C0.12&amp;t=hDrT1KFMQxCciLLA-1&amp;scaling=contain" target="_blank" rel="noopener">Se research- og konseptpresentasjonen <span aria-hidden="true"><i class="fa-solid fa-up-right-from-square"></i></span></a>
+        <a class="text-link source-link" href="https://www.figma.com/proto/nAJFriVAc170Uqswbc1cTq/Prototype-presentasjon?type=design&amp;node-id=2-3&amp;t=TItSrHf7txTwhW14-0&amp;scaling=contain&amp;page-id=0%3A1" target="_blank" rel="noopener">Se prototypepresentasjonen <span aria-hidden="true"><i class="fa-solid fa-up-right-from-square"></i></span></a>
+      </div>
+    </section>
+
+    <a class="next-project" href="../project1/project-1.html"><div><p>Neste prosjekt</p><h2>App for hjemmekontor</h2></div></a>
+  </main>
+</body>
+</html>

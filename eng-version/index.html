@@ -1,122 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Omholt Myhre</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta name="description" content="The portfolio of Emily Omholt Myhre — a UX designer combining user insight, prototyping and technology.">
+  <title>Emily Omholt Myhre — UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
 </head>
 <body>
-    <header id = "home">
-        <a href="#home" id="logo">Emily Omholt Myhre</a>
-       
-        <button id="menu-toggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
-        <span></span><span></span><span></span>
-        </button>
-
-        <ul id="menu">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <nav id="language-switcher">
-            <a href="#" class="active">ENG</a> | 
-            <a href="https://emilyomyhre.no/index.html">NO</a>
-        </nav>
-        </ul>
-
-
-        
-
-    </header>
-
-    <section class="profile">
-        <div class="profilbilde">
-          <img src="./assets/profilbilde.png" alt="bilde">
-        </div>
-      
-        <div class="profile-text">
-          <h1>Hi! I'm Emily</h1>
-          <h2>I'm a UX design student</h2>
-          <a href="mailto:emilyomyhre@gmail.com" class="button">Contact me!</a>
-          <div class="social-icons">
-            <a href="https://github.com/emilymyh?tab=repositories" target="_blank" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/emily-omholt-myhre-4198a7295" target="_blank" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="mailto:emilyomyhre@gmail.com" aria-label="Email">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="https://emilymyh.github.io/cv.html" aria-label="Contact Card">
-              <i class="fa-solid fa-address-card"></i>
-            </a>
-        </div>
-        </div>
-        
-      </section>
-    
-    <section class="card">
-        <h3 id="about">About me</h3>
-        <p class="description">
-            I'm currently pursuing a master's degree in Informatics: Design, use and interaction at the University of Oslo. 
-            I’m passionate about creating user-friendly digital experiences that blend design with 
-            functionality. I have skills within in user research, prototyping and programming which I 
-            hope to apply to projects in the future. I’m excited to continue growing in the field and 
-            contribute  to innovative projects.
-        </p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Emily Omholt Myhre, back to top"><span class="brand-mark" aria-hidden="true">E</span><span>Emily Omholt Myhre</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span></button>
+    <nav class="site-nav" id="site-menu" aria-label="Main navigation">
+      <a href="#current">Current</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <span class="language" aria-label="Language"><a href="../index.html" lang="no">NO</a><strong aria-current="page">EN</strong></span>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">UX designer and developer</p>
+        <h1><em>Emily</em><br>Omholt Myhre</h1>
+        <p class="hero-intro">’m Emily, a master’s student in Informatics: Design, Use and Interaction at the University of Oslo. I combine user research, creative interaction design and technical understanding to create digital solutions that feel intuitive, engaging and meaningful.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">View selected work </a><a class="text-link" href="mailto:emilyomyhre@gmail.com">Let's talk </a></div>
+      </div>
+      <div class="portrait-wrap reveal" aria-label="Portrait of Emily Omholt Myhre">
+        <div class="portrait-frame"><img src="../assets/profile-emily.jpg" alt="Portrait of Emily Omholt Myhre" width="1010" height="1242" fetchpriority="high"></div>
+      </div>
+      <div class="hero-footer"><p>Master's in Informatics<br>at the University of Oslo</p><p class="scroll-note">Scroll to explore <span aria-hidden="true">↓</span></p></div>
     </section>
 
-    <section class="card">
-        <h3 id="skills">Skills</h3>
-        <ul class= "two-col">
-            <li>Figma</li>
-            <li>Prototyping</li>
-            <li>Universal design</li>
-            <li>App development</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>Kotlin</li>
-            <li>HTML, CSS & JavaScript</li>
-        </ul>
+    <section class="current section" id="current">
+      <header class="section-heading reveal"><div><p class="eyebrow"> Current projects</p><h2>What I'm exploring now.</h2></div></header>
+      <div class="current-grid">
+        <article class="current-card reveal">
+          <div class="current-visual thesis-visual" aria-hidden="true"><strong>Master's<br>thesis</strong><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span></div>
+          <div class="current-copy"><p class="project-meta">Master's thesis · University of Oslo</p><h3>My master's thesis</h3><p>An ongoing research and design project completing my master's in Informatics: Design, Use and Interaction. More about the topic, process and findings will be shared as the work develops.</p></div>
+        </article>
+        <article class="current-card reveal">
+          <div class="current-visual"><img src="../assets/project-maritime-off-bridge.png" alt="Two screens from a maritime off-bridge navigation app" width="2048" height="1152" loading="lazy"></div>
+          <div class="current-copy"><p class="project-meta">Summer internship · Maritime UX/UI</p><h3>Maritime Off-Bridge App</h3><p>Design work for a maritime desktop and tablet solution for autonomous ships, enabling navigators to temporarily leave the bridge without losing situational awareness. The project explores how complex navigational information, alerts and necessary actions can be communicated clearly and intuitively in a safety-critical context.</p></div>
+        </article>
+      </div>
     </section>
 
-    <h3 id="projects">Projects</h3>
-    <section class="project-grid">
-        <div class = "card">
-            <h3 class = "project-title">Desktop App Design</h3>
-            <img src="./assets/prosjekt-1-banner.png" alt="IN1050-prosjekt">
-            <p>A web app prototype i made in Figma in the course IN1050 - Introduction to design, use and interaction. 
-                I used data from interviews with users to create an app design that could help create a good social and 
-                work environment in home offices. 
-            </p>
-            <a href="https://emilymyh.github.io/eng-version/project1/project-1.html" class="button">Read more!</a>
-        </div>
-        <div class = "card">
-            <h3 class = "project-title">Laptop light prototype</h3>
-            <img src="./assets/in1060-banner 1.png" alt="IN1060-prosjekt">
-            <p>
-                In this project our goal was to create a desktop light with pause intervals, that helps with maintaining 
-                a healthy vision and work balance. We focused on user involvement in the design process and performed 
-                interviews, workshops to analyze and retrieve data used to design both low- and high-fidelity prototypes
-            </p>
-            <a href="https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/artifakt/" class="button">Read more!</a>
-        </div>
-        <div class = "card">
-            <h3 class = "project-title">SolarCalc</h3>
-            <img src="./assets/test.png" alt="IN2000">
-            <p>
-                This was a group based project with a focus on agile software development. Our goal was to make an Android application 
-                that makes it easier to get information about cost of installing solar panels on a cabin/house and how much you can save
-                 on using solar panels. The app also includes a function that lets you choose different housewares and how much power 
-                 they will use for off-grid cabins. The app also shows the users house on a map and weather conditions that can affect 
-                 the panels power. During the project we had interviews and user-testing with users who were interested in installing 
-                 solar panels. 
-            </p>
-            <a href="https://emilymyh.github.io/eng-version/project3/project-3.html" class="button">Read more!</a>
-        </div>
+    <section class="work section" id="work">
+      <header class="section-heading reveal"><div><p class="eyebrow"> Selected work</p><h2>My previous projects.</h2></div></header>
+      <div class="project-list">
+        <article class="project-card reveal">
+          <a class="project-media disturbia" href="disturbia/index.html" aria-label="Read the Disturbia case study"><img src="../assets/project-disturbia.png" alt="The Disturbia installation with light behind translucent fabric" width="1293" height="895" loading="lazy"><span class="project-index">01</span></a>
+          <div class="project-copy"><p class="project-meta">Interaction design · Arduino · 3D printing | 2026</p><h3><a href="disturbia/index.html">Disturbia</a></h3><p>An interactive light and sound installation in which visitors disrupt a stable rhythm, transforming calm harmony into glitching chaos.</p><a class="case-link" href="disturbia/index.html">Read more</a></div>
+        </article>
+        <article class="project-card reveal">
+          <a class="project-media school" href="school-visit-planner/index.html" aria-label="Read the School Visit Planner case study"><img src="../assets/project-school-visit-planner.png" alt="School Visit Planner showing a map and inspection overview" width="1374" height="890" loading="lazy"><span class="project-index">02</span></a>
+          <div class="project-copy"><p class="project-meta">Product design · DHIS2 · IN5320 | 2025</p><h3><a href="school-visit-planner/index.html">School Visit Planner</a></h3><p>A platform for planning school visits and carrying out school inspections. Built with the DHIS2 design system, it brings visit planning, geographical overview and an inspection form into one workflow.</p><a class="case-link" href="school-visit-planner/index.html">Read more</a></div>
+        </article>
+        <article class="project-card reveal">
+          <a class="project-media solar" href="project3/project-3.html" aria-label="Read the SolarCalc case study"><img src="../assets/project-solarcalc.png" alt="Four screens from the SolarCalc app" width="1064" height="643" loading="lazy"><span class="project-index">03</span></a>
+          <div class="project-copy"><p class="project-meta">UX/UI · Kotlin · Android | 2025</p><h3><a href="project3/project-3.html">SolarCalc</a></h3><p>A mobile app that makes solar energy easier to understand by translating weather and roof data into concrete estimates of energy production, consumption and financial savings.</p><a class="case-link" href="project3/project-3.html">Read more</a></div>
+        </article>
+        <article class="project-card reveal">
+          <a class="project-media connect" href="project1/project-1.html" aria-label="Read the Together case study"><img src="../assets/project-desktop-app.png" alt="The desktop app shown on a laptop" width="1574" height="1034" loading="lazy"><span class="project-index">04</span></a>
+          <div class="project-copy"><p class="project-meta">Solo project · UX/UI · Figma | 2023</p><h3><a href="project1/project-1.html">App for remote workers</a></h3><p>A desktop app grounded in interviews with remote workers, designed for low-pressure contact and a stronger sense of social belonging.</p><a class="case-link" href="project1/project-1.html">Read more</a></div>
+        </article>
+        <article class="project-card reveal">
+          <a class="project-media light" href="2020-vision/index.html" aria-label="Read the 20/20 Vision case study"><img src="../assets/project-2020-vision.png" alt="20/20 Vision digital prototype and physical timer" width="1637" height="983" loading="lazy"><span class="project-index">05</span></a>
+          <div class="project-copy"><p class="project-meta">Interaction design · Arduino · Team | 2024</p><h3><a href="2020-vision/index.html">20/20 Vision</a></h3><p>A physical desktop light with break intervals, developed through interviews and workshops to support eye health and work balance.</p><a class="case-link" href="2020-vision/index.html">Read more</a></div>
+        </article>
+      </div>
     </section>
+
+    <section class="about section" id="about">
+      <div class="about-title reveal"><p class="eyebrow"> About</p><h2>I’m passionate about creating intuitive and engaging digital experiences where functionality and visual design work seamlessly together.</h2></div>
+      <div class="about-copy reveal"><p>I am currently pursuing a master's in Informatics: Design, Use and Interaction at the University of Oslo. I'm on my last year and I'm currently working on my thesis.</p><p>As a master’s student, I explore the entire design process from unclear needs to thoughtful solutions. I thrive at the intersection of people, design and technology, and I’m motivated by new and challenging problems, particularly when user insight can make complex choices simpler and easier to understand.</p><a class="text-link" href="../cv.html">View résumé </a></div>
+      <div class="capabilities reveal"><div class="skill-group"><p class="skill-label">Design tools</p><div class="skill-tags"><span>Figma</span><span>Prototyping</span><span>Universal design</span></div></div><div class="skill-group"><p class="skill-label">Development</p><div class="skill-tags"><span>HTML / CSS / JS</span><span>Kotlin</span><span>Java</span><span>Python</span></div></div><div class="skill-group"><p class="skill-label">Research methods</p><div class="skill-tags"><span>User interviews</span><span>Usability testing</span><span>Workshops</span></div></div></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow light">Contact</p>
+      <p class="contact-intro">Open to design roles, internships, and interesting collaborations.</p>
+      <a class="contact-link" href="mailto:emilyomyhre@gmail.com">emilyomyhre@gmail.com <span aria-hidden="true">→</span></a>
+      <div class="contact-socials" aria-label="Contact links"><a href="https://github.com/emilymyh?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/emily-omholt-myhre-4198a7295" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a><a href="mailto:emilyomyhre@gmail.com" aria-label="Send email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></div>
+      <footer><p>© <span id="year">2026</span> Emily Omholt Myhre</p></footer>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efe8ff">
+  <meta name="description" content="Casestudie av School Visit Planner - en DHIS2-plattform for planlegging og gjennomføring av skoleinspeksjoner.">
+  <title>School Visit Planner - Casestudie av Emily Omholt Myhre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../case-study.css">
+  <script src="../case-study.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Hopp til innhold</a>
+  <header class="site-header case-header">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">E</span><span>Emily Omholt Myhre</span></a>
+    <nav class="site-nav" aria-label="Prosjektnavigasjon">
+      <a href="#problem">Problem</a><a href="#prosess">Prosess</a><a href="#resultat">Resultat</a>
+      <span class="language"><strong aria-current="page">NO</strong><a href="../eng-version/school-visit-planner/index.html" lang="en">EN</a></span>
+    </nav>
+  </header>
+
+  <main id="main" class="case-main">
+    <section class="case-hero section reveal">
+      <a class="case-back" href="../index.html#arbeid">Tilbake til prosjekter</a>
+      <p class="case-kicker">2025</p>
+      <h1>School Visit Planner</h1>
+      <p class="case-deck">En plattform som hjelper skoleinspektører med å prioritere besøk, gjennomføre inspeksjoner og følge utviklingen i skolens ressurser.</p>
+      <dl class="case-facts">
+        <div><dt>Min rolle</dt><dd>UX/UI-design & front-end utvikling</dd></div>
+        <div><dt>Varighet</dt><dd>4 uker</dd></div>
+        <div><dt>Verktøy</dt><dd>Figma, React, DHIS2 UI</dd></div>
+        <div><dt>Kontekst</dt><dd>UiO · IN5320 - Development in platform ecosystems</dd></div>
+      </dl>
+      <div class="case-cover school-cover"><img src="../assets/project-school-visit-planner.png" alt="School Visit Planner med kart og oversikt over inspeksjoner" width="1374" height="890"></div>
+    </section>
+
+    <section class="case-section section" id="problem">
+      <div class="case-section-label reveal"><p>01 · Problemet</p><h2>Lettere organisering</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Skoleinspektører trenger både oversikt og et effektivt verktøy i felt uten å miste sammenhengen mellom tidligere og nye data.</p>
+        <p>Oppgaven var å bygge et datainnsamlingsgrensesnitt for skoleinspeksjonerkoblet til DHIS2 sin plattform. Løsningen skulle gjøre det enkelt å registrere inspeksjonsdata, gi tydelig validering ved feil og hjelpe inspektøren med å velge hvilke skoler som burde besøkes først.</p>
+        <div class="callout"><p>Problemstilling: Hvordan kan én arbeidsflyt støtte planlegging, inspeksjon og oppfølging uten å overvelde brukeren?</p></div>
+        <ul class="insight-list">
+          <li><span>01</span>Skoler måtte kunne prioriteres etter tid siden siste besøk og behov for oppfølging.</li>
+          <li><span>02</span>Tidligere inspeksjonsdata måtte være tilgjengelig før og under et nytt besøk.</li>
+          <li><span>03</span>Endringer i ressurser måtte vises relativt, ikke bare som tall.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-section section" id="prosess">
+      <div class="case-section-label reveal"><p>02 · Prosessen</p><h2>Designe i et etablert system</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Vi kombinerte DHIS2 sitt designsystem med en iterativ prosess fra tidlige skisser til en integrert applikasjon.</p>
+        <p>Teamet startet med å bryte kravene ned til tre brukerhistorier: registrere inspeksjoner, planlegge skolebesøk og sammenligne ressurstellinger. Vi utforsket grensesnittet i Figma, bygget en MVP med React og DHIS2 UI-komponenter, og koblet løsningen mot API-et gjennom parprogrammering.</p>
+        <p>Førstegangsbrukere testet applikasjonen i to runder. Tilbakemeldingene ble brukt til å forbedre navigasjon, filtre, tilbakemeldinger og informasjonsflyt før de siste justeringene.</p>
+        <div class="gallery" data-gallery aria-label="School Visit Planner i bruk">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/visit-planner-map.png" alt="Kart med skoleklynger og prioritetsmarkører" data-caption="Landing page for skolebesøksplanleggeren med klynger og prioritering">
+            <img class="gallery-slide" src="assets/priority-map.png" alt="Kart med fargekodede skoler og filter" data-caption="Figma design: Filtrering etter prioritet, oppfølgingsbehov og siste inspeksjon">
+            <img class="gallery-slide" src="assets/previous-inspection.png" alt="Detaljer fra forrige inspeksjon ved siden av kartet" data-caption="Figma design: Nøkkeldata fra tidligere inspeksjoner vises i kartkonteksten">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+        <div class="callout"><p>Vi skilte presentasjon, interaksjon, applikasjonslogikk og datatilgang slik at løsningen kunne videreutvikles uten å endre DHIS2-kjernen.</p></div>
+      </div>
+    </section>
+
+    <section class="case-section section" id="resultat">
+      <div class="case-section-label reveal"><p>03 · Resultatet</p><h2>Én sammenhengende flyt</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Sluttproduktet samlet beslutningsstøtte, datainnsamling og historikk i en DHIS2-tilpasset plattform.</p>
+        <p>Inspektøren kan finne og prioritere skoler på kartet, åpne data fra tidligere besøk, registrere en ny inspeksjon og sammenligne nye ressurstellinger med tidligere data. Søk, filtre og visuell prioritering gjør store datamengder enklere å navigere.</p>
+        <div class="gallery" data-gallery aria-label="Inspeksjon og ressursregistrering">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/inspection-list.png" alt="Liste over tidligere skoleinspeksjoner" data-caption="Figma design: Søkbar oversikt over tidligere inspeksjoner">
+            <img class="gallery-slide" src="assets/resource-count.png" alt="Skjema for ny ressurstelling" data-caption="Figma design: Registrering og sammenligning av skolens ressurser">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+        <div class="outcome-banner"><strong>Viktigste læring</strong>Gjennom prosjektet lærte vi å bruke designsystemet aktivt for å sikre helhet og gjenkjennelighet, samtidig som vi erfarte at god 
+          design fortsatt krever tydelig informasjonsarkitektur, gjenbrukbare komponenter og tidlig brukertesting. Arbeidet i et tverrfaglig team ga oss verdifull erfaring med å balansere designmessige, tekniske og brukerorienterte behov. Modularitet og en klarere struktur i kodebasen identifiserte vi som viktig videre arbeid.</div>
+      </div>
+    </section>
+
+    <a class="next-project" href="../project3/project-3.html"><div><p>Neste prosjekt</p><h2>SolarCalc</h2></div><span aria-hidden="true">↗</span></a>
+  </main>
+</body>
+</html>

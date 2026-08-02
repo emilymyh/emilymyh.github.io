@@ -1,106 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Omholt Myhre - Prosjekter</title>
-    <link rel="stylesheet" href="project1-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="project1-script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta name="description" content="Casestudie av Sammen – en skrivebordsapp for sosial tilhørighet på hjemmekontoret, designet av Emily Omholt Myhre.">
+  <title>Sammen — Casestudie av Emily Omholt Myhre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../case-study.css">
+  <script src="../case-study.js" defer></script>
 </head>
 <body>
-    <header>
-      <a href="https://emilyomyhre.no/" id="logo">Emily Omholt Myhre</a>
-       
-        <button id="menu-toggle" class="hamburger" aria-label="Åpne meny" aria-expanded="false" aria-controls="menu">
-        <span></span><span></span><span></span>
-        </button>
+  <a class="skip-link" href="#main">Hopp til innhold</a>
+  <header class="site-header case-header">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">E</span><span>Emily Omholt Myhre</span></a>
+    <nav class="site-nav" aria-label="Prosjektnavigasjon">
+      <a href="#problem">Problem</a><a href="#prosess">Prosess</a><a href="#resultat">Resultat</a>
+      <span class="language"><strong aria-current="page">NO</strong><a href="../eng-version/project1/project-1.html" lang="en">EN</a></span>
+    </nav>
+  </header>
+  <main id="main" class="case-main">
+    <section class="case-hero section reveal">
+      <a class="case-back" href="../index.html#arbeid">Tilbake til arbeid</a>
+      <p class="case-kicker">2023</p>
+      <h1>App for hjemmekontor</h1>
+      <p class="case-deck">Hvordan kan et digitalt verktøy styrke sosial tilhørighet for ansatte som jobber hjemmefra?</p>
+      <dl class="case-facts">
+        <div><dt>Min rolle</dt><dd>UX-researcher & designer</dd></div>
+        <div><dt>Varighet</dt><dd>Ett semester</dd></div>
+        <div><dt>Verktøy</dt><dd>Figma, intervjuer, analyse</dd></div>
+        <div><dt>Kontekst</dt><dd>UiO · IN1050 - Introduksjon til design, bruk og interaksjon</dd></div>
+      </dl>
+      <div class="case-cover purple"><img src="../assets/project-desktop-app.png" alt="Skrivebordsappen vist på en laptop" width="1574" height="1034"></div>
+    </section>
 
-        <ul id="menu">
-            <li><a href="#goal">Mål</a></li>
-            <li><a href="#process">Prosess</a></li>
-            <li><a href="#outcome">Resultat</a></li>
+    <section class="case-section section" id="problem">
+      <div class="case-section-label reveal"><p>01 · Problemet</p><h2>Nærhet over nett</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Hjemmekontoret gir fleksibilitet, men kan også gjøre de små sosiale møtene borte.</p>
+        <p>Prosjektet utforsket hverdagen til personer mellom 50 og 60 år som hovedsakelig jobber hjemmefra. Målet var å forstå hvordan digitale verktøy kunne støtte trivsel og tilhørighet uten å føles som enda et påtvunget møte.</p>
+        <div class="callout"><p>Problemstilling: Hvordan kan vi gjøre kontakt med kolleger over nett enkel, uformell og trygg?</p></div>
+      </div>
+    </section>
+
+    <section class="case-section section" id="prosess">
+      <div class="case-section-label reveal"><p>02 · Prosessen</p><h2>Fra intervjuer til løsning</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Jeg startet med å ha brukerintervjuer.</p>
+        <p>Gjennom dybdeintervjuer kartla jeg arbeidsvaner, arbeidsflyt og trivsel. Materialet ble transkribert, fargekodet og samlet i et affiniydiagram. Dette gjorde mønstrene synlige og ga et tydelig grunnlag for prioritering.</p>
+        <ul class="insight-list">
+          <li><span>01</span>Lavterskel kontakt med kolleger må kunne skje uten å avbryte.</li>
+          <li><span>02</span>Brukerne savnet de uformelle glimtene fra en delt arbeidshverdag.</li>
+          <li><span>03</span>Det måtte føles trygt å stille spørsmål uten å virke påtrengende.</li>
         </ul>
-    </header>
+        <div class="gallery" data-gallery aria-label="Research og tidlige konsepter">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/kategorisering_oblig2.PNG" alt="Fargekodet analyse fra intervju" data-caption="Kategorisering og analyse av intervjudata">
+            <img class="gallery-slide" src="assets/behov.PNG" alt="Oversikt over identifiserte brukerbehov" data-caption="Syntese av de viktigste brukerbehovene">
+            <img class="gallery-slide" src="assets/skisse_app.PNG" alt="Tidlig skisse av appen" data-caption="Tidlig skisse basert på innsiktene">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+      </div>
+    </section>
 
-    <section class="card" id="goal"> 
-        <h3 class="card-title">Om dette prosjektet</h3>
-        <p>Dette prosjektet utforsket hvordan digitale verktøy kan forbedre trivsel og 
-            sosial tilhørighet for personer i alderen 50–60 år som hovedsakelig jobber hjemmefra. 
-            Gjennom intervjuer, analyse og prototyping utviklet jeg 
-            høyoppløselige løsninger basert på faktiske brukerbehov, med fokus på enkle
-            og intuitive måter å holde kontakten med kolleger på. 
-        </p>
-</section>
-
-    <section class="card" id="process"> 
-        <h3 class="card-title">Tidlig prosess</h3>
-        <p> Jeg startet med dybdeintervjuer om arbeidsvaner, arbeidsflyt og 
-            trivsel. Dataene ble transkribert, fargekodet og organisert 
-            i et affinitetsdiagram, som fremhevet brukernes behov for bedre 
-            sosial kontakt og støtte i arbeidshverdagen.</p>
-
-    <div class="slider" role="region" aria-label="Bildekarusell">
-  <div class="viewport">
-    <div class="slides" role="group" aria-label="Lysbilder">
-      <img src="./assets/kategorisering_oblig2.PNG" alt="Affinitetsdiagram" class="slide is-active"
-           data-caption="Affinitetsdiagram fra intervju">
-      <img src="./assets/behov.PNG" alt="Innsikter" class="slide"
-           data-caption="Innsikter fra første intervjuanalyse">
-    </div>
-         <button class="nav prev" aria-label="Forrige bilde"> <i class="fa-solid fa-caret-left"></i></button>
-        <button class="nav next" aria-label="Neste bilde"> <i class="fa-solid fa-caret-right"></i></button>
-  </div>
-   
-  <div class="dots" role="tablist" aria-label="Velg bilde"></div>
-  <p class="caption" aria-live="polite"></p>
-
-  <h3 class="sub-title">Innsikter</h3>
-        <ul class="points">
-            <li>Behov for lavterskel kontakt med kolleger</li>
-            <li>Ønske om å dele arbeidshverdagen uformelt</li>
-            <li>Viktig å kunne stille spørsmål uten å oppleves som påtrengende</li>
-        </ul>
-
-        <figure class="sketch-figure">
-        <img src="./assets/skisse_app.PNG" alt="skisse" class="rotated-sketch">
-        <figcaption>Skisse av appen basert på innsamlede innsikter</figcaption>
-</figure>
-</section>
-
-<section class="card" id="outcome"> 
-        <h3 class="card-title">Resultat</h3>
-  <p>
-    Jeg utviklet en høyoppløselig prototype som adresserte brukernes behov. 
-    Prototypen fokuserte på en PC-app med fire hovedfunksjoner: en anonym spørsmål-og-svar-side, chat, et sosialt feed, og profilsider med 
-    en kontaktoversikt. Designet ble testet og evaluert, med vekt på enkel navigasjon og sosial interaksjon.
-   </p>
-
-    <div class="slider" role="region" aria-label="Bildekarusell">
-  <div class="viewport">
-    <div class="slides" role="group" aria-label="Lysbilder">
-      <img src="./assets/profilside.PNG" alt="profil" class="slide is-active"
-           data-caption="Profil der du kan få tilgang til kontakter og se profilen">
-      <img src="./assets/chat.PNG" alt="chat" class="slide"
-           data-caption="Chat der du kan chatte eller ringe kontakter">
-      <img src="./assets/spørsmålside.PNG" alt="Q&A" class="slide"
-           data-caption="Anonym spørsmål-og-svar-side der du kan stille arbeidsrelaterte spørsmål">
-      <img src="./assets/feed.PNG" alt="feed" class="slide"
-           data-caption="Feed der du kan dele arbeidshverdagen med kolleger, som møter ønsket om å dele erfaringer fra arbeidsdagen">
-    </div>
-         <button class="nav prev" aria-label="Forrige bilde"> <i class="fa-solid fa-caret-left"></i></button>
-        <button class="nav next" aria-label="Neste bilde"> <i class="fa-solid fa-caret-right"></i></button>
-  </div>
-   
-  <div class="dots" role="tablist" aria-label="Velg bilde"></div>
-  <p class="caption" aria-live="polite"></p>
-
-  <h3 class="sub-title">Lærdommer</h3>
-    <p>Gjennom dette prosjektet fikk jeg erfaring med å bruke HCI-metoder som intervjuer, analyse og prototyping for å oversette 
-        brukerbehov til konkrete designløsninger. Jeg lærte viktigheten av å gjøre innsikter om til funksjonalitet som oppleves både intuitiv 
-        og meningsfull i hverdagen.</p>
-  
-</section>
-
+    <section class="case-section section" id="resultat">
+      <div class="case-section-label reveal"><p>03 · Resultatet</p><h2>Ett sted for å møtes</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">En testet prototype med fire fokuserte måter å holde kontakt på.</p>
+        <p>Den høyoppløselige prototypen samler anonym Q&A, chat, en sosial feed og profilsider med kontaktoversikt. Navigasjonen ble holdt enkel, slik at den sosiale funksjonen kunne stå i sentrum.</p>
+        <div class="gallery" data-gallery aria-label="Ferdig prototype">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/profilside.PNG" alt="Profilside med kontaktoversikt" data-caption="Profil og kontaktoversikt">
+            <img class="gallery-slide" src="assets/chat.PNG" alt="Chat med kolleger" data-caption="Chat og samtaler med kolleger">
+            <img class="gallery-slide" src="assets/spørsmålside.PNG" alt="Anonym spørsmål-og-svar-side" data-caption="Anonym spørsmål-og-svar-side">
+            <img class="gallery-slide" src="assets/feed.PNG" alt="Sosial feed fra arbeidsdagen" data-caption="En sosial feed for arbeidshverdagen">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+        <div class="outcome-banner"><strong>Viktigste læring</strong>Gode funksjoner oppstår ikke gjennom idémyldring alene, men når reelle brukerbehov gjøres om til konkrete og gjennomtenkte designvalg uten å gjøre løsningen mer kompleks enn nødvendig.</div>
+      </div>
+    </section>
+    <a class="next-project" href="../disturbia/index.html"><div><p>Neste prosjekt</p><h2>Disturbia</h2></div></a>
+  </main>
 </body>
 </html>

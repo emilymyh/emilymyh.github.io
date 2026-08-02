@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efe8ff">
+  <meta name="description" content="Casestudie av Disturbia - en interaktiv lys- og lydinstallasjon laget for utstillingen Pulse.">
+  <title>Disturbia - Casestudie av Emily Omholt Myhre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../case-study.css">
+  <script src="../case-study.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Hopp til innhold</a>
+  <header class="site-header case-header">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">E</span><span>Emily Omholt Myhre</span></a>
+    <nav class="site-nav" aria-label="Prosjektnavigasjon">
+      <a href="#konsept">Konsept</a><a href="#prosess">Prosess</a><a href="#resultat">Resultat</a>
+      <span class="language"><strong aria-current="page">NO</strong><a href="../eng-version/disturbia/index.html" lang="en">EN</a></span>
+    </nav>
+  </header>
+
+  <main id="main" class="case-main">
+    <section class="case-hero section reveal">
+      <a class="case-back" href="../index.html#arbeid"> <i class="fa-solid fa-arrow-left-long" style="color: #24172f;"></i> Tilbake til arbeid</a>
+      <p class="case-kicker">2026</p>
+      <h1>Disturbia</h1>
+      <p class="case-deck">  Et prosjekt jeg hadde i In5120 - Tangible Interaction. Vi lagde en interaktiv lys- og lydinstallasjon der publikum bryter en stabil rytme og forvandler rolig harmoni til kaos.</p>
+      <dl class="case-facts">
+        <div><dt>Min rolle</dt><dd>Konsept, design & bygging</dd></div>
+        <div><dt>Varighet</dt><dd>Fem uker</dd></div>
+        <div><dt>Verktøy</dt><dd>Arduino, 3D-printing & håndverk</dd></div>
+        <div><dt>Kontekst</dt><dd>UiO · IN5120 · Tangible Interaction </dd></div>
+      </dl>
+      <div class="case-cover disturbia-cover"><img src="../assets/project-disturbia.png" alt="Disturbia-installasjonen med lys bak transparente tekstiler" width="1293" height="895"></div>
+    </section>
+
+    <section class="case-section section" id="konsept">
+      <div class="case-section-label reveal"><p>01 · Konseptet</p><h2>Å forstyrre harmonien</h2></div>
+      <div class="case-content reveal">
+        <p class="lead"></p>
+        <p> I kurset utviklet studentgruppene hver sin interaktive installasjon til en felles avslutningsutstilling. Vi skapte et omsluttende rom av tekstil med tre strenger som publikum kunne spille på. Hver berøring påvirket både lydbildet og lyset bak stoffet, fra en rolig, harmonisk puls til et stadig mer fragmentert og glitchende uttrykk</p>
+        <div class="callout"><p>Problemstilling: Hvordan kan en enkel fysisk handling gjøre overgangen fra stabil puls til forstyrrelse synlig?</p></div>
+        <div class="gallery" data-gallery aria-label="Idéutvikling for Disturbia">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/pulse-brainstorm.jpg" alt="Brainstorm med assosiasjoner rundt ordet puls" data-caption="Bred idéutforskning av temaet puls">
+            <img class="gallery-slide" src="assets/ideation.jpg" alt="Gruppearbeid med idéer og lapper" data-caption="Fra assosiasjoner til mulige interaksjoner">
+            <img class="gallery-slide" src="assets/concept-sketch.jpg" alt="Tidlig skisse av et rom med spillbare strenger" data-caption="Tidlig romlig skisse av installasjonen">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section" id="prosess">
+      <div class="case-section-label reveal"><p>02 · Prosessen</p><h2>Fra idemyldring til konsept</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">På fem uker gikk vi fra abstrakt tema til en installasjon i full skala.</p>
+        <p>Vi utforsket flere ideer og konsepter før vi landet på harpen som utgangspunkt for interaksjonen. Gjennom skisser, modeller og tidlige prototyper utviklet konseptet seg videre til et enkelt instrument med tre strenger. Vi arbeidet parallelt med interaksjon, elektronikk, lyd, lys og rom. Tidlige modeller hjalp oss å teste hvordan tre strenger kunne bli et intuitivt instrument. Deretter utviklet vi fester og komponenter med 3D-print, programmerte Arduino og LED-lys, og bygget trekonstruksjonen som bar tekstiler, tråder og elektronikk.</p>
+        <ul class="insight-list">
+          <li><span>01</span>Tre strenger ga en umiddelbar invitasjon til å spille og eksperimentere.</li>
+          <li><span>02</span>Transparente tekstiler spredte lyset og skjulte teknologien uten å dempe responsen.</li>
+          <li><span>03</span>Lyd og lys måtte henge sammen for at forstyrrelsen skulle oppleves som én helhet.</li>
+        </ul>
+        <div class="gallery" data-gallery aria-label="Byggeprosessen for Disturbia">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/prototype-strings.jpg" alt="Liten prototype med tre strenger og tekstiler" data-caption="Prototype for strenger og tekstiler">
+            <img class="gallery-slide" src="assets/3d-print-design.jpg" alt="Digital modell av en komponent for 3D-print" data-caption="Utforming av spesialtilpassede 3D-printede komponenter">
+            <img class="gallery-slide" src="assets/installation-build.jpg" alt="Installasjonen under bygging med tekstiler, lys og elektronikk" data-caption="Montering av tekstil, LED-lys og elektronikk">
+            <img class="gallery-slide" src="assets/building-lights.jpg" alt="To gruppemedlemmer arbeider med lysende tekstilformer" data-caption="Håndarbeid og testing i full skala">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+        <p>Prosjektet krevde at vi lærte og kombinerte mange produksjonsformer raskt: programmering med Arduino, 3D-modellering og printing, søm, snekring, elektronikk og fysisk montering. Det tette tidsspennet gjorde kontinuerlig testing og samarbeid avgjørende.</p>
+      </div>
+    </section>
+
+    <section class="case-section section" id="resultat">
+      <div class="case-section-label reveal"><p>03 · Resultatet</p><h2>En puls publikum kunne bryte</h2></div>
+      <div class="case-content reveal">
+        <p class="lead">Disturbia ble vist som en interaktiv installasjon for rundt 150 besøkende.</p>
+        <p>I den ferdige installasjonen møtte publikum et mørkt, omsluttende rom med tre strenger, belyst av 3D-printede spotlights. Når de spilte på strengene, påvirket de installasjonen direkte og drev uttrykket fra en stabil puls til et urolig landskap av glitchende lyd og lys. Slik ble utstillingens tema ikke bare visualisert, men også gjort til en fysisk handling publikum selv kunne utføre.</p>
+        <figure class="case-video">
+          <video controls preload="metadata" poster="../assets/project-disturbia.png" aria-label="Video av Disturbia-installasjonen i bruk">
+            <source src="assets/disturbia-in-action.mov" type="video/quicktime">
+            Nettleseren din støtter ikke videoformatet. <a href="assets/disturbia-in-action.mov">Last ned videoen</a>.
+          </video>
+          <figcaption>Video av den ferdige installasjonen.</figcaption>
+        </figure>
+        <div class="gallery" data-gallery aria-label="Den ferdige Disturbia-installasjonen">
+          <div class="gallery-viewport">
+            <img class="gallery-slide is-active" src="assets/exhibition-lights.jpg" alt="Rosa og lilla lys beveger seg bak tekstilene" data-caption="Det ferdige lysuttrykket under utstillingen">
+            <img class="gallery-slide" src="assets/installation-build.jpg" alt="Tekstilformer henger i det omsluttende rommet" data-caption="Behind the seams.">
+          </div>
+          <div class="gallery-nav"><p class="gallery-caption" aria-live="polite"></p><div class="gallery-buttons"><button class="gallery-button prev" aria-label="Forrige bilde">←</button><button class="gallery-button next" aria-label="Neste bilde">→</button></div></div>
+        </div>
+        <div class="outcome-banner"><strong>Viktigste læring</strong>Prosjektet ga meg praktisk erfaring med prototyping på tvers av digitale og håndverksbaserte disipliner. Den intensive arbeidsperioden innebar mange timer sammen hver dag, noe som både var krevende og lærerikt. Underveis ble vi bedre kjent, lærte å utnytte hverandres styrker og utviklet et tettere samarbeid som gjorde oss bedre rustet til å løse utfordringer sammen.</div>
+      </div>
+    </section>
+
+    <a class="next-project" href="../school-visit-planner/index.html"><div><p>Neste prosjekt</p><h2>School Visit Planner</h2></div></a>
+  </main>
+</body>
+</html>

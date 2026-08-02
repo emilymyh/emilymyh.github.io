@@ -1,22 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="no">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emily Omholt Myhre</title>
-  <link rel="stylesheet" href="cv.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efe8ff">
+  <meta name="description" content="CV for UX-designer og utvikler Emily Omholt Myhre.">
+  <title>CV — Emily Omholt Myhre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="cv.css">
 </head>
-<body id="cv-bg">
-  <header id="home">
-    <a href="index.html" id="logo">Emily Omholt Myhre</a>
+<body>
+  <a class="skip-link" href="#cv">Hopp til CV</a>
+  <header class="cv-header">
+    <a class="back-link" href="index.html#om"><i class="fa-solid fa-left-long" aria-hidden="true"></i><span>Tilbake til porteføljen</span></a>
+    <div class="cv-actions">
+      <a href="assets/emily-omholt-myhre-cv.png" download="Emily-Omholt-Myhre-CV.png"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Last ned CV</span></a>
+      <a href="mailto:emilyomyhre@gmail.com">Kontakt meg <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
-
-  <div class="cv-wrap">
-    <iframe
-      src="./assets/emily_cv.pdf#view=FitH"
-      title="Emily Omholt Myhre - CV"
-      loading="lazy">
-    </iframe>
-  </div>
+  <main id="cv" class="cv-main">
+    <div class="cv-heading">
+      <div>
+        <p>Curriculum vitae</p>
+        <h1>Emily Omholt Myhre</h1>
+      </div>
+      <p>UX-designer og utvikler<br>Oslo, Norge</p>
+    </div>
+    <figure class="cv-document">
+      <img src="assets/emily-omholt-myhre-cv.png" alt="CV for Emily Omholt Myhre med arbeidserfaring, utdanning, ferdigheter og kontaktinformasjon" width="1168" height="1627">
+      <figcaption>Oppdatert CV — Emily Omholt Myhre</figcaption>
+    </figure>
+  </main>
 </body>
 </html>
